@@ -85,7 +85,13 @@
   0% {
     background-position: 0%;}
   100% {
-    background-position: 200%;}}}
+    background-position: 200%;}}
+  --animate-ripple: ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite;
+  @keyframes ripple {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);}
+  50% {
+    transform: translate(-50%, -50%) scale(0.9);}}}
 
 :root {
   --radius: 0.625rem;
@@ -166,9 +172,6 @@
   --color-5: oklch(90.7% 0.231 133);
 }
 
-
-
-
 body {
   color: #000;
   background-color: #fff;
@@ -178,3 +181,9 @@ body {
   background-color: #000;
   color: #fff;
 }
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;}
+  body {
+    @apply bg-background text-foreground;}}

@@ -1,6 +1,8 @@
 import Navbar from "@/components/layout/Navbar/Navbar";
 import "./globals.css";
 import { Providers } from "./providers";
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+
 
 export default function RootLayout({
   children,
@@ -10,7 +12,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <Providers> 
+        <SmoothCursor />
+        <Providers>
           <header>
             <Navbar />
           </header>

@@ -1,4 +1,9 @@
 import { RainbowButton } from "@/components/magicui/rainbow-button";
+import { Ripple } from "@/components/magicui/ripple";
+import { TextAnimate } from "@/components/magicui/text-animate";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import Image from "next/image";
 import type { FC } from 'react';
 
 
@@ -6,7 +11,46 @@ import type { FC } from 'react';
 const Hero: FC = () => {
     return (
         <>
-            <RainbowButton variant="outline">Get Unlimited Access</RainbowButton>
+            <div className="bg-background">
+                <div className="relative flex h-screen  w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
+                    <div className="flex justify-center">
+                        <RainbowButton variant="outline">🟢 Available for Work</RainbowButton>
+                    </div>
+                    <div className="text-center leading-none md:text-[200px] text-[70px] font-medium tracking-tighter dark:text-white text-black">
+                        <TextAnimate animation="blurIn" as="div">ADNAN</TextAnimate>
+                        <TextAnimate animation="blurIn" as="div">MAHMUD</TextAnimate>
+                    </div>
+                    <div className="z-10 md:mt-[-150px] mt-[-55px]">
+                        <Image src='/assest/adnan.png' width={600} height={600} alt={""} />
+                    </div>
+                    <Ripple className="mt-[-150px]" />
+                </div>
+                <div className="md:absolute bottom-1/4 left-1/5 md:mt-0 mt-[-100px]">
+                    <div className="size-full max-w-lg flex flex-col items-end justify-center overflow-hidden pt-8 dark:text-white text-black text-right ml-auto">
+                        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                            <p className="text-5xl font-semibold">
+                                Front-end Developer
+                            </p>
+                        </BoxReveal>
+
+                        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                            <div className="mt-6">
+                                <p>
+                                    Frontend Developer passionate about building responsive and user-friendly web applications, with
+                                    experience in React, Next.js, and Tailwind CSS. Seeking to contribute to innovative teams through
+                                    impactful real-world projects.
+                                </p>
+                            </div>
+                        </BoxReveal>
+
+                        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                            <InteractiveHoverButton className="mt-[1.6rem] border dark:border-white border-black self-end">
+                                Download CV
+                            </InteractiveHoverButton>
+                        </BoxReveal>
+                    </div>
+                </div>
+            </div>
         </>
     );
 }

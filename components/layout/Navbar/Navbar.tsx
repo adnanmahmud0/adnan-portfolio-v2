@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
                         >
                             {theme === 'dark' ? '🌞' : '🌙'}
                         </button>
-                        <InteractiveHoverButton>Download CV</InteractiveHoverButton>
+                        <InteractiveHoverButton className='border-2 border-white text-white' >Download CV</InteractiveHoverButton>
 
 
                         {/* Mobile Menu Toggle */}
