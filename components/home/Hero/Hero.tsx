@@ -3,6 +3,7 @@ import { Ripple } from "@/components/magicui/ripple";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { BoxReveal } from "@/components/magicui/box-reveal";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
+import { SpinningText } from "@/components/magicui/spinning-text";
 import Image from "next/image";
 import type { FC } from 'react';
 
@@ -13,19 +14,19 @@ const Hero: FC = () => {
         <>
             <div className="bg-background">
                 <div className="relative flex h-screen  w-full flex-col items-center justify-center overflow-hidden rounded-lg ">
-                    <div className="flex justify-center">
+                    <div className="flex justify-center mt-40">
                         <RainbowButton variant="outline">🟢 Available for Work</RainbowButton>
                     </div>
-                    <div className="text-center leading-none md:text-[200px] text-[70px] font-medium tracking-tighter dark:text-white text-black">
+                    <div className="text-center leading-none md:text-[150px] text-[70px] font-medium tracking-tighter dark:text-white text-black">
                         <TextAnimate animation="blurIn" as="div">ADNAN</TextAnimate>
                         <TextAnimate animation="blurIn" as="div">MAHMUD</TextAnimate>
                     </div>
-                    <div className="z-10 md:mt-[-150px] mt-[-55px]">
-                        <Image src='/assest/adnan.png' width={600} height={600} alt={""} />
+                    <div className="z-10 md:mt-[-120px] mt-[-55px]">
+                        <Image src='/assest/adnan.png' width={550} height={550} alt={""} />
                     </div>
                     <Ripple className="mt-[-150px]" />
                 </div>
-                <div className="md:absolute bottom-1/4 left-1/5 md:mt-0 mt-[-100px]">
+                <div className="md:absolute bottom-1/6 left-1/10 md:mt-0 mt-[-100px]">
                     <div className="size-full max-w-lg flex flex-col items-end justify-center overflow-hidden pt-8 dark:text-white text-black text-right ml-auto">
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                             <p className="text-5xl font-semibold">
@@ -49,6 +50,11 @@ const Hero: FC = () => {
                             </InteractiveHoverButton>
                         </BoxReveal>
                     </div>
+                </div>
+                <div className="md:absolute bottom-1/4 right-1/4 md:mt-0 mt-[-100px]">
+                    <SpinningText reverse className="text-2xl text-white" duration={6} radius={6}>
+                        adnanmahmud99 • adnanmahmud99 •
+                    </SpinningText>
                 </div>
             </div>
         </>
