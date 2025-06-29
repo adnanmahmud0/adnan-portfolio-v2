@@ -3,6 +3,7 @@ import { FaBriefcase, FaPalette } from "react-icons/fa";
 import { FaLaptopCode } from "react-icons/fa6";
 import type { FC } from 'react';
 import FeatureCard from "./FeatureCard";
+import Header from "@/components/header/Header";
 
 
 
@@ -30,17 +31,21 @@ const features = [
 const WhyChooseMe: FC = ({ }) => {
     return (
         <>
-            <div className="flex flex-col md:flex-row justify-center gap-6 bg-background p-6">
-                {features.map((feature, index) => (
-                    <FeatureCard
-                        key={index}
-                        icon={feature.icon}
-                        title={feature.title}
-                        description={feature.description}
-                    />
-                ))}
+            <div className="py-30 bg-background">
+                <div>
+                    <Header title={"Why Choose me"} subTitle={'Why Choose me'} />
+                </div>
+                <div className="flex flex-col md:flex-row justify-center gap-15 bg-background py-7">
+                    {features.map((feature, index) => (
+                        <FeatureCard
+                            key={index}
+                            icon={feature.icon}
+                            title={feature.title}
+                            description={feature.description}
+                        />
+                    ))}
+                </div>
             </div>
-
         </>
     );
 }
