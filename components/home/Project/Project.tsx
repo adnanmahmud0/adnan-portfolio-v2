@@ -1,63 +1,31 @@
-'use client'
+// app/project/page.tsx or wherever you render the component
+'use client';
 
 import Header from "@/components/header/Header";
 import type { FC } from "react";
-import { Button } from "@/components/ui/button";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card";
-import { Lens } from "@/components/magicui/lens";
-import { CoolMode } from "@/components/magicui/cool-mode";
+import { projectData } from "./projectData";
+import ProjectCard from "./ProjectCard";
 
-const Project: FC = ({ }) => {
-    return (
-        <>
-            <div className="max-w-7xl mx-auto">
-                <div>
-                    <Header
-                        title={"Selected Work"}
-                        subTitle={"Elevating Brands with Design Brilliance"}
-                    />
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                    <Card className="relative max-w-md shadow-none">
-                        <CardHeader>
-                            <Lens
-                                zoomFactor={2}
-                                lensSize={150}
-                                isStatic={false}
-                                ariaLabel="Zoom Area"
-                            >
-                                <img
-                                    src="https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="image placeholder"
-                                    width={500}
-                                    height={500}
-                                />
-                            </Lens>
-                        </CardHeader>
-                        <CardContent>
-                            <CardTitle className="text-2xl">Your next camp</CardTitle>
-                            <CardDescription>
-                                See our latest and best camp destinations all across the five
-                                continents of the globe.
-                            </CardDescription>
-                        </CardContent>
-                        <CardFooter className="space-x-4">
-                            <Button>Open</Button>
-                            <CoolMode>
-                                <Button variant="secondary">Like</Button>
-                            </CoolMode>
-                        </CardFooter>
-                    </Card>
-                </div>
-            </div>
-        </>
-    );
+
+const Project: FC = () => {
+  return (
+    <div className="max-w-7xl mx-auto">
+      <Header
+        title={"Selected Work"}
+        subTitle={"Elevating Brands with Design Brilliance"}
+      />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {projectData.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+          />
+        ))}
+      </div>
+    </div>
+  );
 };
+
 export default Project;
