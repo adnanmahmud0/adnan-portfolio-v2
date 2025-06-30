@@ -1,5 +1,4 @@
 import React from "react";
-import { BoxReveal } from "@/components/magicui/box-reveal";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { BorderBeam } from "@/components/magicui/border-beam";
 
