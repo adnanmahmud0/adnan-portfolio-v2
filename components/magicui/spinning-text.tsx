@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { motion, Transition, Variants } from "motion/react";
 import React, { CSSProperties } from "react";
 
+
 type SpinningTextProps = {
   children: string | string[];
   style?: CSSProperties;
@@ -20,7 +21,7 @@ type SpinningTextProps = {
 
 const BASE_TRANSITION = {
   repeat: Infinity,
-  ease: "linear",
+  ease: [0, 0, 1, 1] as const, // This represents a linear easing
 };
 
 const BASE_ITEM_VARIANTS = {
