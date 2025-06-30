@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero/Hero";
+import Project from "@/components/home/Project/Project";
 import Skill from "@/components/home/Skill/Skill";
 import WhyChooseMe from "@/components/home/why-choose-me/WhyChooseMe";
 
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="bg-background">
       <Hero />
       <WhyChooseMe />
+      <Project />
       <Skill />
     </div>
   );

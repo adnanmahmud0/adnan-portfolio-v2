@@ -17,7 +17,7 @@ const Header: FC<HeaderProps> = ({ title, subTitle }) => {
                     <RainbowButton className='cursor-none' variant="outline">🟢 {title}</RainbowButton>
                 </div>
                 <div className="py-7">
-                    <TextAnimate className='text-balance text-5xl font-semibold leading-none tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl dark:text-white text-black' animation="blurInUp" by="character" once>
+                    <TextAnimate className='text-5xl font-semibold leading-none tracking-tighter sm:text-6xl md:text-7xl lg:text-8xl dark:text-white text-black max-w-4xl' animation="blurInUp" by="character" once>
                         {subTitle}
                     </TextAnimate>
                 </div>
