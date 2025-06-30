@@ -1,5 +1,10 @@
+'use client'
+
+
 import type { FC } from 'react';
 import { IconCloud } from "@/components/magicui/icon-cloud";
+
+
 
 const slugs = [
   "typescript",

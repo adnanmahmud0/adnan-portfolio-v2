@@ -1,3 +1,5 @@
+'use client'
+
 import Hero from "@/components/home/Hero/Hero";
 import Project from "@/components/home/Project/Project";
 import Skill from "@/components/home/Skill/Skill";

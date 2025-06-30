@@ -1,25 +1,30 @@
-import Header from '@/components/header/Header';
-import type { FC } from 'react';
+'use client'
+
+import Header from "@/components/header/Header";
+import type { FC } from "react";
 import { Button } from "@/components/ui/button";
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "@/components/ui/card";
 import { Lens } from "@/components/magicui/lens";
-import Image from 'next/image';
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 const Project: FC = ({ }) => {
     return (
         <>
-            <div className='max-w-7xl mx-auto'>
+            <div className="max-w-7xl mx-auto">
                 <div>
-                    <Header title={"Selected Work"} subTitle={'Elevating Brands with Design Brilliance'} />
+                    <Header
+                        title={"Selected Work"}
+                        subTitle={"Elevating Brands with Design Brilliance"}
+                    />
                 </div>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className="grid grid-cols-2 gap-4">
                     <Card className="relative max-w-md shadow-none">
                         <CardHeader>
                             <Lens
@@ -28,8 +33,7 @@ const Project: FC = ({ }) => {
                                 isStatic={false}
                                 ariaLabel="Zoom Area"
                             >
-                                
-                                <Image
+                                <img
                                     src="https://images.unsplash.com/photo-1736606355698-5efdb410fe93?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                                     alt="image placeholder"
                                     width={500}
@@ -45,13 +49,15 @@ const Project: FC = ({ }) => {
                             </CardDescription>
                         </CardContent>
                         <CardFooter className="space-x-4">
-                            <Button>Let&apos;s go</Button>
-                            <Button variant="secondary">Another time</Button>
+                            <Button>Open</Button>
+                            <CoolMode>
+                                <Button variant="secondary">Like</Button>
+                            </CoolMode>
                         </CardFooter>
                     </Card>
                 </div>
             </div>
         </>
     );
-}
+};
 export default Project;

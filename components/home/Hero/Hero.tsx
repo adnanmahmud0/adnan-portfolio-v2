@@ -1,3 +1,5 @@
+'use client'
+
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { Ripple } from "@/components/magicui/ripple";
 import { TextAnimate } from "@/components/magicui/text-animate";
@@ -6,6 +8,7 @@ import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-b
 import { SpinningText } from "@/components/magicui/spinning-text";
 import Image from "next/image";
 import type { FC } from 'react';
+import { WordRotate } from "@/components/magicui/word-rotate";
 
 
 
@@ -29,9 +32,9 @@ const Hero: FC = () => {
                 <div className="md:absolute bottom-1/6 left-1/10 md:mt-0 mt-[-100px]">
                     <div className="size-full max-w-lg flex flex-col items-end justify-center overflow-hidden pt-8 dark:text-white text-black text-right ml-auto">
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-                            <p className="text-5xl font-semibold">
-                                Front-end Developer
-                            </p>
+                            <WordRotate className="text-5xl font-semibold"
+                                words={["Front-end Developer", "Web Developer", "Backend Developer", "MERN Stack Developer", "Full Stack Web Developer", "Researcher", "AI Model Developer", "AI Developer"]}
+                            />
                         </BoxReveal>
 
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
