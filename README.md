@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adnan Mahmud – Full Stack Developer Portfolio
 
-## Getting Started
+🌐 [Visit Portfolio Website](#) &nbsp; | &nbsp; 📄 [Download CV](#)
 
-First, run the development server:
+---
+
+## 🧑‍💻 Introduction
+
+Hi, I'm **Adnan Mahmud** – a **Full Stack Developer** with a passion for building responsive, accessible, and visually engaging web applications. With hands-on experience in **React.js**, **Next.js**, **Node.js**, and **Tailwind CSS**, I specialize in delivering performant and scalable digital solutions. I'm also actively exploring AI development using **Python**, **TensorFlow**, and **Machine Learning** techniques.
+
+I'm available for work and always open to exciting new opportunities!
+
+---
+
+## 📚 Table of Contents
+
+- [Introduction](#-introduction)
+- [Features](#-features)
+- [Skills](#-skills)
+- [Selected Projects](#-selected-projects)
+- [Installation & Setup](#-installation--setup)
+- [Usage](#-usage)
+- [Contact](#-contact)
+- [License](#-license)
+
+---
+
+## ✨ Features
+
+- Responsive Frontend Design
+- Backend API Development
+- Full Stack Application Support
+- UI/UX Design Proficiency
+- AI/ML Model Prototyping
+
+---
+
+## 🛠 Skills
+
+### 💻 Frontend Development
+- HTML, CSS, JavaScript
+- React.js, Next.js, TypeScript
+- Tailwind CSS, DaisyUI, Bootstrap, Magic UI, Material UI
+- WordPress, Firebase
+
+### 🖥 Backend Development
+- Node.js, Express.js
+- MongoDB (Mongoose), PostgreSQL, MySQL
+- REST API Design, Authentication (JWT, NextAuth)
+- TypeScript, CRUD Operations
+
+### 🎨 Graphic Design & UI/UX
+- Adobe XD, Figma, Photoshop, Illustrator
+- TeleportHQ, Wireframing, Draw.io, Filmora
+
+### 🧠 AI & Data Science
+- Python, Deep Learning, Machine Learning
+- TensorFlow, Keras, Self-supervised Learning
+- Explainable AI, Model Builder
+
+---
+
+## 🚀 Selected Projects
+
+| Project              | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **Your Next Camp**   | Discover top-rated camp destinations around the globe.                      |
+| **Design Studio**    | Creative solutions for modern brands and digital experiences.               |
+| **Travel Planner**   | Smart itineraries and local experiences to plan your dream trip.            |
+| **Online Store**     | A fully responsive e-commerce experience with tailored recommendations.     |
+| **Health Tracker**   | Real-time analytics for fitness and health monitoring.                      |
+| **Portfolio Builder**| Easily build your online presence with beautiful, customizable templates.   |
+
+---
+
+## 🧰 Installation & Setup
+
+> _Note: If this README is for your portfolio codebase, include steps to run locally._
 
 ```bash
+# Clone the repository
+git clone https://github.com/adnanmahmud99/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
