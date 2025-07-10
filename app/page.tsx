@@ -1,5 +1,6 @@
 'use client'
 
+import AboutMe from "@/components/home/About-me/AboutMe";
 import Hero from "@/components/home/Hero/Hero";
 import Project from "@/components/home/Project/Project";
 import Skill from "@/components/home/Skill/Skill";
@@ -14,6 +15,7 @@ export default function Home() {
       <WhyChooseMe />
       <Project />
       <Skill />
+      <AboutMe />
     </div>
   );
 }
