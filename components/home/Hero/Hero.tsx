@@ -9,6 +9,8 @@ import { SpinningText } from "@/components/magicui/spinning-text";
 import Image from "next/image";
 import type { FC } from 'react';
 import { WordRotate } from "@/components/magicui/word-rotate";
+import { FaGithub, FaLinkedin, FaBehance, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+
 
 
 
@@ -44,6 +46,25 @@ const Hero: FC = () => {
                                     experience in React, Next.js, and Tailwind CSS. Seeking to contribute to innovative teams through
                                     impactful real-world projects.
                                 </p>
+                            </div>
+                        </BoxReveal>
+                        <BoxReveal boxColor={"#5046e6"} duration={0.5}>
+                            <div className="mt-6 flex items-center justify-end gap-4 text-2xl text-black dark:text-white">
+                                <a href="https://github.com/adnanmahmud99" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <FaGithub className="hover:text-[#333]" />
+                                </a>
+                                <a href="https://www.linkedin.com/in/adnanmahmud99" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <FaLinkedin className="hover:text-[#0077b5]" />
+                                </a>
+                                <a href="https://www.behance.net/adnanmahmud99" target="_blank" rel="noopener noreferrer" aria-label="Behance">
+                                    <FaBehance className="hover:text-[#1769ff]" />
+                                </a>
+                                <a href="https://wa.me/8801327228777" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                                    <FaWhatsapp className="hover:text-[#25d366]" />
+                                </a>
+                                <a href="mailto:me.adnanmahmud99@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                                    <FaEnvelope className="hover:text-[#ea4335]" />
+                                </a>
                             </div>
                         </BoxReveal>
 
