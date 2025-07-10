@@ -33,7 +33,7 @@ const WhyChooseMe: FC = ({ }) => {
         <>
             <div className="py-30 bg-background">
                 <div>
-                    <Header title={"Why Choose me"} subTitle={'Why Work with Me'} />
+                    <Header title={"Why Choose me"} subTitle={'Why Work with Me'} textSiz="textSiz='sm:text-6xl md:text-7xl lg:text-8xl" />
                 </div>
                 <div className="flex flex-col md:flex-row justify-center gap-15 bg-background py-7">
                     {features.map((feature, index) => (

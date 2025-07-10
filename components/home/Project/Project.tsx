@@ -13,6 +13,7 @@ const Project: FC = () => {
       <Header
         title={"Selected Work"}
         subTitle={"Elevating Brands with Design Brilliance"}
+        textSiz="textSiz='sm:text-6xl md:text-7xl lg:text-8xl"
       />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projectData.map((project, index) => (

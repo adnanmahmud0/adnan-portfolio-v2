@@ -11,7 +11,7 @@ const Skill: FC = () => {
   return (
     <div className="max-w-7xl mx-auto py-7">
       <div className="py-7">
-        <Header title={"My Skill"} subTitle={"What are My Skills"} />
+        <Header title={"My Skill"} subTitle={"What are My Skills"} textSiz='sm:text-6xl md:text-7xl lg:text-8xl' />
       </div>
       <div className="grid grid-cols-3">
         <div className="space-y-10">
