@@ -1,7 +1,6 @@
 'use client'
 
 import AboutMe from "@/components/home/About-me/AboutMe";
-import Email from "@/components/home/Email/Email";
 import Hero from "@/components/home/Hero/Hero";
 import Project from "@/components/home/Project/Project";
 import { MarqueeDemo } from "@/components/home/Review/MarqueeDemo";
@@ -19,7 +18,6 @@ export default function Home() {
       <Skill />
       <AboutMe />
       <MarqueeDemo />
-      <Email />
     </div>
   );
 }

@@ -31,7 +31,7 @@ const Hero: FC = () => {
                     </div>
                     <Ripple className="mt-[-150px]" />
                 </div>
-                <div className="md:absolute bottom-1/6 left-1/10 md:mt-0 mt-[-100px]">
+                <div className="md:absolute bottom-1/10 left-1/10 md:mt-0 mt-[-100px]">
                     <div className="size-full max-w-lg flex flex-col items-end justify-center overflow-hidden pt-8 dark:text-white text-black text-right ml-auto">
                         <BoxReveal boxColor={"#5046e6"} duration={0.5}>
                             <WordRotate className="text-5xl font-semibold"
