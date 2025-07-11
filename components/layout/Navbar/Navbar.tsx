@@ -24,6 +24,9 @@ const Navbar: React.FC = () => {
 
     return (
         <header>
+            <nav className='bg-white border-gray-200 px-4 lg:px-6 py-2.5 flex justify-center'>
+                <span className=''>This website is currently under development. Go to old protfulio <a href="https://adnan-mahmud.web.app/">https://adnan-mahmud.web.app/</a></span>
+            </nav>
             <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Logo />
