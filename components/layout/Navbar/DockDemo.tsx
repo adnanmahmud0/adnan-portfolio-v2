@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { HomeIcon } from "lucide-react";
@@ -26,18 +27,6 @@ import ModeToggle from "@/components/mode-toggle";
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 const DATA = {
-    navbar: [
-        {
-            href: "/#about",
-            icon: HomeIcon,
-            label: "About",
-        },
-        {
-            href: "/#projects",
-            icon: FaFileAlt,
-            label: "Projects",
-        },
-    ],
     contact: {
         social: {
             Home: {
@@ -90,37 +79,6 @@ export function DockDemo() {
                             className="size-12 rounded-full"
                         />
                     </DockIcon>
-
-                    {/* Navbar items (optional) */}
-                    {DATA.navbar.length > 0 && (
-                        <>
-                            {DATA.navbar.map((item) => (
-                                <DockIcon key={item.label}>
-                                    <Tooltip>
-                                        <TooltipTrigger asChild>
-                                            <Link
-                                                href={item.href}
-                                                aria-label={item.label}
-                                                className={cn(
-                                                    buttonVariants({ variant: "ghost", size: "icon" }),
-                                                    "size-12 rounded-full"
-                                                )}
-                                            >
-                                                <item.icon className="size-4 text-gray-800 dark:text-gray-200" />
-                                            </Link>
-                                        </TooltipTrigger>
-                                        <TooltipContent>
-                                            <p className="dark:text-gray-900 text-gray-100">{item.label}</p>
-                                        </TooltipContent>
-                                    </Tooltip>
-                                </DockIcon>
-                            ))}
-                            <Separator
-                                orientation="vertical"
-                                className="h-full dark:border-gray-300 border-gray-700"
-                            />
-                        </>
-                    )}
 
                     {/* Home Link */}
                     <DockIcon>
